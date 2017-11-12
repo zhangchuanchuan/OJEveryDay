@@ -1,10 +1,8 @@
 package com.snakotech.testproblem
 
 import com.snakotech.testproblem._11._1110
-import com.snakotech.testproblem._1108.WindowArray
+import com.snakotech.testproblem._11._1108
 import org.junit.Test
-
-import org.junit.Assert.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -15,7 +13,7 @@ class ExampleUnitTest {
 
     @Test
     fun testWindowArray() {
-        WindowArray.mainTest();
+        _1108.mainTest();
     }
 
     @Test

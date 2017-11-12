@@ -1,4 +1,4 @@
-package com.snakotech.testproblem._1108;
+package com.snakotech.testproblem._11;
 
 import java.util.Arrays;
 import java.util.Deque;
@@ -10,7 +10,7 @@ import java.util.Queue;
  * Created by Administrator on 2017/11/8.
  */
 
-public class WindowArray {
+public class _1108 {
     public static void mainTest() {
         int[] source = new int[]{12,53,23,2,4,5,6,4,3,4,5,4,5,8,0,7,6};
         System.out.println(Arrays.toString(getMaxWindowArray(source, 4)));
