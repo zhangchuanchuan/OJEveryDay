@@ -2,6 +2,7 @@ package com.snakotech.testproblem
 
 import com.snakotech.testproblem._11._1110
 import com.snakotech.testproblem._11._1108
+import com.snakotech.testproblem._11._1113
 import org.junit.Test
 
 /**
@@ -19,5 +20,10 @@ class ExampleUnitTest {
     @Test
     fun testSearch2Array() {
         _1110.testMain();
+    }
+
+    @Test
+    fun testReplaceBlack() {
+        _1113.testMain();
     }
 }
