@@ -3,6 +3,7 @@ package com.snakotech.testproblem
 import com.snakotech.testproblem._11._1110
 import com.snakotech.testproblem._11._1108
 import com.snakotech.testproblem._11._1113
+import com.snakotech.testproblem._11._1114
 import org.junit.Test
 
 /**
@@ -25,5 +26,10 @@ class ExampleUnitTest {
     @Test
     fun testReplaceBlack() {
         _1113.testMain();
+    }
+
+    @Test
+    fun testLinkChainRevertPrint() {
+        _1114.testMain();
     }
 }
