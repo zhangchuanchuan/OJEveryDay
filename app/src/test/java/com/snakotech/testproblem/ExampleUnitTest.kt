@@ -1,9 +1,6 @@
 package com.snakotech.testproblem
 
-import com.snakotech.testproblem._11._1110
-import com.snakotech.testproblem._11._1108
-import com.snakotech.testproblem._11._1113
-import com.snakotech.testproblem._11._1114
+import com.snakotech.testproblem._11.*
 import org.junit.Test
 
 /**
@@ -31,5 +28,10 @@ class ExampleUnitTest {
     @Test
     fun testLinkChainRevertPrint() {
         _1114.testMain();
+    }
+
+    @Test
+    fun testContractTree() {
+        _1115.testMain();
     }
 }
