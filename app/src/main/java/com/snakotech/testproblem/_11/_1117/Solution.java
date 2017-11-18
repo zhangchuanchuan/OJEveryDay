@@ -7,7 +7,8 @@ public class Solution {
             return 0;
         }
 
-        int temp = array[0];
+        int first = array[0];
+        int temp = first;
         for (int i=1; i < array.length; i++) {
             if (temp > array[i]) {
                 return array[i];
@@ -15,6 +16,6 @@ public class Solution {
                 temp = array[i];
             }
         }
-        return temp;
+        return first;
     }
 }
