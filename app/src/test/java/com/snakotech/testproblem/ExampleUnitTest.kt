@@ -1,6 +1,7 @@
 package com.snakotech.testproblem
 
 import com.snakotech.testproblem._11.*
+import com.snakotech.testproblem._11._1121.Solution
 import org.junit.Test
 
 /**
@@ -33,5 +34,18 @@ class ExampleUnitTest {
     @Test
     fun testContractTree() {
         _1115.testMain();
+    }
+    @Test
+    fun testGetCountOf1() {
+        val c = Solution()
+        Integer.MIN_VALUE
+        System.out.println(c.NumberOf1(-12))
+        System.out.println(c.NumberOf1_1(-12))
+        System.out.println(c.NumberOf1(128))
+        System.out.println(c.NumberOf1_1(128))
+        System.out.println(c.NumberOf1(-2147483648))
+        System.out.println(c.NumberOf1_1(-2147483648))
+        System.out.println(c.NumberOf1(-1))
+        System.out.println(c.NumberOf1_1(-1))
     }
 }
