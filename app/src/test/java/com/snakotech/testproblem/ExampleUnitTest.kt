@@ -48,4 +48,5 @@ class ExampleUnitTest {
         System.out.println(c.NumberOf1(-1))
         System.out.println(c.NumberOf1_1(-1))
     }
+
 }
