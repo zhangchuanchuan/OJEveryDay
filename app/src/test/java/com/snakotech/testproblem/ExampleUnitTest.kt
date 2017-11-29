@@ -49,5 +49,25 @@ class ExampleUnitTest {
         System.out.println(c.NumberOf1_1(-1))
     }
 
+    @Test
+    fun testStack() {
+        val test = com.snakotech.testproblem._11._1129.Solution()
+        test.push(3)
+        System.out.print(test.min())
+        test.push(4)
+        System.out.print(test.min())
+        test.push(2)
+        System.out.print(test.min())
+        test.push(3)
+        System.out.print(test.min())
+        test.pop()
+        System.out.print(test.min())
+        test.pop()
+        System.out.print(test.min())
+        test.pop()
+        System.out.print(test.min())
+        test.push(0)
+        System.out.print(test.min())
+    }
 
 }
