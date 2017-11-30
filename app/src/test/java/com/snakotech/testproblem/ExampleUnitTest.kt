@@ -70,4 +70,10 @@ class ExampleUnitTest {
         System.out.print(test.min())
     }
 
+    @Test
+    fun testOrderPop() {
+        val orderPop = com.snakotech.testproblem._11._1130.Solution()
+        System.out.println(orderPop.IsPopOrder(intArrayOf(1,2,3,4,5), intArrayOf(3,5,4,2,1)))
+    }
+
 }
