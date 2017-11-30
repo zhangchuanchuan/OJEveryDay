@@ -11,17 +11,64 @@ package com.snakotech.testproblem._11._1130;
 public class Solution {
     public boolean IsPopOrder(int [] pushA,int [] popA) {
         int size = pushA.length;
-
-        for (int i=0; i < size; i++) {
-            int value = popA[i];
-            int index = getValueIndex(pushA, value);
-            
+        int first = popA[0];
+        int index = 0;
+        boolean[] booleans = new boolean[size];
+        for (int i = 0; i < size; i++) {
+            if (pushA[i] == first) {
+                index = i;
+                break;
+            }
+            if (i == size - 1) {
+                return false;
+            }
         }
+        booleans[index] = true;
+        for (int i=1; i < size; i++) {
+            boolean down = false;
+            boolean up = false;
+            int downIndex = index - 1;
+            while (downIndex >= 0) {
+                if (!booleans[downIndex]) {
+                    if (pushA[downIndex] == popA[i]) {
+                        booleans[downIndex] = true;
+                        index = downIndex;
+                        down = true;
+                        break;
+                    } else {
+                        down = false;
+                        break;
+                    }
+                } else {
+                    downIndex -- ;
+                }
+            }
 
+            if (down) {
+                continue;
+            }
 
-    }
+            int upIndex = index + 1;
+            while (upIndex < size) {
+                if (!booleans[upIndex]) {
+                    if (pushA[upIndex] == popA[i]) {
+                        booleans[upIndex] = true;
+                        index = upIndex;
+                        up = true;
+                        break;
+                    }
+                }
+                upIndex++;
+            }
+            if (up) {
+                continue;
+            }
+            if (upIndex == size && downIndex == -1) {
+                return true;
+            }
+            return false;
 
-    private int getValueIndex(int[] pushA, int target) {
-
+        }
+        return true;
     }
 }
