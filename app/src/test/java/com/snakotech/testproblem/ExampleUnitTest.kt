@@ -52,22 +52,19 @@ class ExampleUnitTest {
     @Test
     fun testStack() {
         val test = com.snakotech.testproblem._11._1129.Solution()
-        test.push(3)
-        System.out.print(test.min())
         test.push(4)
-        System.out.print(test.min())
-        test.push(2)
-        System.out.print(test.min())
-        test.push(3)
+        test.push(8)
         System.out.print(test.min())
         test.pop()
         System.out.print(test.min())
-        test.pop()
-        System.out.print(test.min())
-        test.pop()
-        System.out.print(test.min())
-        test.push(0)
-        System.out.print(test.min())
+        System.out.println("")
+        val test1 = com.snakotech.testproblem._11._1129.Solution1()
+        test1.push(4)
+        test1.push(8)
+        System.out.print(test1.min())
+        test1.pop()
+        System.out.print(test1.min())
+
     }
 
     @Test
