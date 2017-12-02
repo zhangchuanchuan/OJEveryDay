@@ -73,4 +73,14 @@ class ExampleUnitTest {
         System.out.println(orderPop.IsPopOrder(intArrayOf(1,2,3,4,5), intArrayOf(4,3,5,1,2)))
     }
 
+    @Test
+    fun testPrintFromTopToBottom() {
+        val solution = com.snakotech.testproblem._12._1201.Solution()
+        val root = solution.TreeNode(2)
+        root.left = solution.TreeNode(3)
+        root.right = solution.TreeNode(5)
+        System.out.print(solution.PrintFromTopToBottom(root))
+
+    }
+
 }
