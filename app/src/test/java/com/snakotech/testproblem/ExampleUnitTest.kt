@@ -83,4 +83,11 @@ class ExampleUnitTest {
 
     }
 
+    @Test
+    fun testCheckIsSearch() {
+        val solution = com.snakotech.testproblem._12._1202.Solution()
+        System.out.print(solution.VerifySquenceOfBST(intArrayOf(4,8,6,12,16,14,10)))
+        System.out.print(solution.VerifySquenceOfBST(intArrayOf(1,2,3,4,5)))
+    }
+
 }
