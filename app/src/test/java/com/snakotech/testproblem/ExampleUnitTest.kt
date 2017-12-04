@@ -90,4 +90,20 @@ class ExampleUnitTest {
         System.out.print(solution.VerifySquenceOfBST(intArrayOf(1,2,3,4,5)))
     }
 
+    @Test
+    fun testMultiLinked() {
+        val solution = com.snakotech.testproblem._12._1204.Solution()
+        val pHead = solution.RandomListNode(1)
+        pHead.next = solution.RandomListNode(2)
+        var node = pHead.next
+        node.next = solution.RandomListNode(3)
+        node = node.next
+        node.next = solution.RandomListNode(3)
+        node = node.next
+        node.next = solution.RandomListNode(4)
+        node = node.next
+        node.next = solution.RandomListNode(5)
+        solution.Clone(pHead)
+    }
+
 }
