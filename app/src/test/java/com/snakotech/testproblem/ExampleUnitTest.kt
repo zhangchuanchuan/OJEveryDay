@@ -106,4 +106,10 @@ class ExampleUnitTest {
         solution.Clone(pHead)
     }
 
+    @Test
+    fun testPabc() {
+        val solution = com.snakotech.testproblem._12._1206.Solution()
+        System.out.println(solution.Permutation("aabc"))
+    }
+
 }
