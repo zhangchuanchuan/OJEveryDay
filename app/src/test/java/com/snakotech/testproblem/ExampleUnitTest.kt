@@ -112,4 +112,12 @@ class ExampleUnitTest {
         System.out.println(solution.Permutation("aabc"))
     }
 
+    @Test
+    fun testArray() {
+        val solution = com.snakotech.testproblem._12._1207.Solution()
+        System.out.println(solution.MoreThanHalfNum_Solution(intArrayOf(1,2,3,2,2,2,5,4,2)))
+        System.out.println(solution.MoreThanHalfNum_Solution(intArrayOf(1,2,3,2,4,2,5,2,3)))
+        System.out.println(solution.MoreThanHalfNum_Solution(intArrayOf(2,2,2,2,2,1,3,4,5)))
+        System.out.println(solution.MoreThanHalfNum_Solution(intArrayOf(1,2,3)))
+    }
 }
