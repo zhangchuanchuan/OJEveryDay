@@ -29,6 +29,7 @@ public class Solution {
         return result;
     }
 
+    //插入方法还可以优化。使用二分插入
     private void insertToList(ArrayList<Integer> list, int target) {
         if (list.size() == 0) {
             list.add(target);
