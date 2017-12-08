@@ -120,4 +120,10 @@ class ExampleUnitTest {
         System.out.println(solution.MoreThanHalfNum_Solution(intArrayOf(2,2,2,2,2,1,3,4,5)))
         System.out.println(solution.MoreThanHalfNum_Solution(intArrayOf(1,2,3)))
     }
+
+    @Test
+    fun test1208() {
+        val solution = com.snakotech.testproblem._12._1208.Solution()
+        System.out.println(solution.GetLeastNumbers_Solution(intArrayOf(4,5,1,6,2,7,3,8), 4))
+    }
 }
