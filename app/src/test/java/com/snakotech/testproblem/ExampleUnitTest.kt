@@ -126,4 +126,11 @@ class ExampleUnitTest {
         val solution = com.snakotech.testproblem._12._1208.Solution()
         System.out.println(solution.GetLeastNumbers_Solution(intArrayOf(4,5,1,6,2,7,3,8), 4))
     }
+
+    @Test
+    fun test1210() {
+        val solution = com.snakotech.testproblem._12._1210.Solution()
+        System.out.println(solution.FindGreatestSumOfSubArray(intArrayOf(6,-3,-2,7,-15,1,2,2)))
+        System.out.println(solution.FindGreatestSumOfSubArray(intArrayOf(-2,-8,-1,-5,-9)))
+    }
 }
