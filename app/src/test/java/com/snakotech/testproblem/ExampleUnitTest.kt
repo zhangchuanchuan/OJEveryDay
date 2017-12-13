@@ -133,4 +133,10 @@ class ExampleUnitTest {
         System.out.println(solution.FindGreatestSumOfSubArray(intArrayOf(6,-3,-2,7,-15,1,2,2)))
         System.out.println(solution.FindGreatestSumOfSubArray(intArrayOf(-2,-8,-1,-5,-9)))
     }
+
+    @Test
+    fun test1211() {
+        val solution = com.snakotech.testproblem._12._1211.Solution()
+        System.out.println(solution.NumberOf1Between1AndN_Solution(13))
+    }
 }
