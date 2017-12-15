@@ -138,5 +138,6 @@ class ExampleUnitTest {
     fun test1211() {
         val solution = com.snakotech.testproblem._12._1211.Solution()
         System.out.println(solution.NumberOf1Between1AndN_Solution(13))
+        System.out.println(solution.NumberOf1Between1AndN_Solution(25))
     }
 }
